@@ -7,13 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-image: url('background100.jpg'); background-repeat: no-repeat; background-size: 1700px;">
+  <!--creates the Nav bar and sets the color for it-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
+          <!--Heres the different tabs for the Nav-->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="top500.html"> Top 500 Players <span class="sr-only">(current)</span></a>
@@ -29,7 +31,89 @@
             </span>
           </ul>
         </div>
-      </nav>
+    </nav>
+    <!--Creates a button called Role, when clicked it's supposed to have a dropdown menu -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Role
+        </button>
+        <!--The dropdown menu, has different buttons that get dropped down-->
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Damage</a>
+          <a class="dropdown-item" href="#">Support</a>
+          <a class="dropdown-item" href="#">Tank</a>
+        </div>
+    </div>
+
+    <!--Another button with a drop down menu -->
+    <div class="btn-group" style="float: right;">
+        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Regions
+        </button>
+        <div class="dropdown-menu" style="margin-right: 30px;">
+          <a class="dropdown-item" href="#">North America</a>
+          <a class="dropdown-item" href="#">Asia</a>
+          <a class="dropdown-item" href="#">Europe</a>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+<!--Where the table for the Top 500 learderboard is-->
+  <div style="margin-top: 100px; ">
+    <h1 style="text-align: center; font-weight: bold;">Top 500 Leaderboard</h1>
+        <table class="table">
+          <!--The header of the table with all the different columns -->
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Name</th>
+              <th scope="col">Win Rate</th>
+              <th scope="col">Heros</th>
+            </tr>
+          </thead>
+          <!--The content in the table is here, I reduces the opacity of it so the background is visable-->
+          <tbody class="p-3 mb-2 bg-secondary text-white" style="opacity: 0.8;">
+            <tr>
+              <th scope="row">1</th>
+              <td>VIOL2T</td>
+              <td>64%</td>
+              <td>Zenyatta</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>JJonNak</td>
+              <td>69%</td>
+              <td>Zenyatta</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Kabaji</td>
+              <td>70%</td>
+              <td>Tracer</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Valentine</td>
+                <td>58%</td>
+                <td>Hanzo</td>
+              </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Kayzzer</td>
+                <td>56%</td>
+                <td>Doomfist</td>
+            </tr>
+          </tbody>
+      </table>
+      <!--A button added which later on will act as a way to show more players-->
+      <button type="button" class="btn btn-primary btn-lg btn-block">Load More Top Players</button>
+    
+  </div>
 
 
 
