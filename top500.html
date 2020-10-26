@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="index.js"></script>
 </head>
 <body style="background-image: url('background100.jpg'); background-repeat: no-repeat; background-size: 1700px;">
   <!--creates the Nav bar and sets the color for it-->
@@ -65,53 +66,29 @@
 
 <!--Where the table for the Top 500 learderboard is-->
   <div style="margin-top: 100px; ">
-    <h1 style="text-align: center; font-weight: bold;">Top 500 Leaderboard</h1>
+    <h1 style="text-align: center; font-weight: bold; background: rgba(255, 255, 255, 0.3);">Best Stats</h1>
         <table class="table">
           <!--The header of the table with all the different columns -->
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Rank</th>
-              <th scope="col">Name</th>
-              <th scope="col">Win Rate</th>
-              <th scope="col">Heros</th>
+              <th scope="col">Highest Eliminations</th>
+              <th scope="col">All Damage Done</th>
+              <th scope="col">All Healing Done</th>
+              <th scope="col">Highest Kill-Streak</th>
             </tr>
           </thead>
           <!--The content in the table is here, I reduces the opacity of it so the background is visable-->
           <tbody class="p-3 mb-2 bg-secondary text-white" style="opacity: 0.8;">
             <tr>
-              <th scope="row">1</th>
-              <td>VIOL2T</td>
-              <td>64%</td>
-              <td>Zenyatta</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>JJonNak</td>
-              <td>69%</td>
-              <td>Zenyatta</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Kabaji</td>
-              <td>70%</td>
-              <td>Tracer</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Valentine</td>
-                <td>58%</td>
-                <td>Hanzo</td>
-              </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Kayzzer</td>
-                <td>56%</td>
-                <td>Doomfist</td>
+              <th><input type="text" readonly id="Eliminations"</th>
+              <th><input type="text" readonly id="Damage"</th>
+              <th><input type="text" readonly id="Healing"</th>
+              <th><input type="text" readonly id="Streak"</th>
             </tr>
           </tbody>
       </table>
       <!--A button added which later on will act as a way to show more players-->
-      <button type="button" class="btn btn-primary btn-lg btn-block">Load More Top Players</button>
+      <!--<button type="button" class="btn btn-primary btn-lg btn-block">Load More Top Players</button>-->
     
   </div>
 
