@@ -19,7 +19,7 @@
           <!--Heres the different tabs for the Nav-->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="top500.html"> Top 500 Players <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="top500.html"> Best Stats <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="stats.html">Player Stats</a>
@@ -63,7 +63,14 @@
 
 
 
-
+    <div class="input-group flex-nowrap"  style="margin-top: 6rem !important; width: 600px; margin-left: 390px;">
+        <!--This creates the box for the word search-->
+        <div class="input-group-prepend" >
+          <button class="btn btn-primary" type="button" id="get-btn">Search</span>
+        </div>
+        <!--This allows the bar to be given an input, it also has a placeholder which tells you to search for stats-->
+        <input type="text" id="playerName" class="form-control" placeholder="Search for player stats..." aria-label="player stats" aria-describedby="addon-wrapping">
+      </div>
 <!--Where the table for the Top 500 learderboard is-->
   <div style="margin-top: 100px; ">
     <h1 style="text-align: center; font-weight: bold; background: rgba(255, 255, 255, 0.3);">Best Stats</h1>
