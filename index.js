@@ -19,10 +19,8 @@
 //     document.getElementById('Damage').innerHTML = JSON.stringify(data);
 //   });
 
-//Search bar
 const getBtn = document.getElementById('get-btn')
 const postBtn = document.getElementById('post-btn')
-
 const getData = () =>{
   var answer = document.getElementById('playerName');
   console.log(answer);

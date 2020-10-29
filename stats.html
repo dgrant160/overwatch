@@ -38,11 +38,31 @@
         <!--This allows the bar to be given an input, it also has a placeholder which tells you to search for stats-->
         <input type="text" id="playerName" class="form-control" placeholder="Search for player stats..." aria-label="player stats" aria-describedby="addon-wrapping">
       </div>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Player Stats</h1>
-          <p class="lead">This will show the stats of the player that is entered on the search bar or default the users account.</p>
-        </div>
+      <div style="margin-top: 100px; ">
+        <h1 style="text-align: center; font-weight: bold; background: rgba(255, 255, 255, 0.3);">Total Stats</h1>
+            <table class="table">
+              <!--The header of the table with all the different columns -->
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">All Eliminations</th>
+                  <th scope="col">All Damage Done</th>
+                  <th scope="col">All Healing Done</th>
+                  <th scope="col">All Deaths</th>
+                </tr>
+              </thead>
+              <!--The content in the table is here, I reduces the opacity of it so the background is visable-->
+              <tbody class="p-3 mb-2 bg-secondary text-white" style="opacity: 0.8;">
+                <tr>
+                  <th><input type="text" readonly id="TotalEliminations"></th>
+                  <th><input type="text" readonly id="TotalDamage"></th>
+                  <th><input type="text" readonly id="TotalHealing"></th>
+                  <th><input type="text" readonly id="TotalDeaths"></th>
+                </tr>
+              </tbody>
+          </table>
+          <!--A button added which later on will act as a way to show more players-->
+          <!--<button type="button" class="btn btn-primary btn-lg btn-block">Load More Top Players</button>-->
+        
       </div>
       
       
@@ -53,5 +73,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="totalstats.js"></script>
 </body>
 </html>
