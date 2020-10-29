@@ -1,6 +1,6 @@
-//  fetch('http://98.177.49.68:3000/details/pc/us/Dragon-111428')
-//   .then(response => response.json())
-//     .then(data => console.log(data));
+  fetch('http://98.177.49.68:3000/details/pc/us/Dragon-111428')
+   .then(response => response.json())
+     .then(data => console.log(data));
 
 
   // fetch('http://98.177.49.68:3000/details/pc/us/Dragon-111428')
@@ -35,5 +35,5 @@ const getData = () =>{
     document.getElementById('Streak').placeholder = data.data.quickplay.best["kill-streak"];
   });
 };
-
+ 
 getBtn.addEventListener('click', getData);
